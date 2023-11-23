@@ -35,8 +35,8 @@ module.exports = defineConfig({
   use: {
     viewport: { width: 1280, height: 720 },
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'https://www.guru99.com',
-    baseURL: process.env.ENV_URL,
+    baseURL: 'https://www.guru99.com',
+    // baseURL: process.env.ENV_URL,
     // baseURL: process.env.URL === '1' ? 'https://www.test.guru99.com' : 'https://www.guru99.com',
     locale: 'de-DE',
     timezoneId: 'Europe/Berlin',
@@ -54,7 +54,7 @@ module.exports = defineConfig({
       testMatch: '**/*.setup.js'
     },
     {
-      name: 'logged in',
+      name: 'login',
       testMatch: 'newborn.spec.js',
       dependencies: ['log_in'],
       use: {storageState: STORAGE_STATE, },
