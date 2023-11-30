@@ -84,52 +84,6 @@
   },
   "suites": [
     {
-      "title": "global.setup.js",
-      "file": "global.setup.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "make login",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "log_in",
-              "projectName": "log_in",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4489,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-11-27T21:50:22.130Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/global.setup.js-make-login-log-in/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3ddbcaf8b47669ab14b8-68c8d1f771d18aa32253",
-          "file": "global.setup.js",
-          "line": 6,
-          "column": 6
-        }
-      ]
-    },
-    {
       "title": "newborn.spec.js",
       "file": "newborn.spec.js",
       "column": 0,
@@ -139,73 +93,129 @@
         {
           "title": "Verification steps for newborn website",
           "file": "newborn.spec.js",
-          "line": 4,
+          "line": 6,
           "column": 6,
           "specs": [
             {
               "title": "check the state after open page",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "login",
-                  "projectName": "login",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "status": "failed",
-                      "duration": 2632,
-                      "error": {
-                        "message": "expect: Property 'nth' not found.",
-                        "stack": "Error: expect: Property 'nth' not found.\n    at /Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js:13:62",
-                        "location": {
-                          "file": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js",
-                          "column": 62,
-                          "line": 13
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[90m// await page.goto('/')\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span.card-title'\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'div.row span.card-title'\u001b[39m))\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Виручка:'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m'usage POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6387,
+                      "errors": [],
+                      "stdout": [
                         {
-                          "location": {
-                            "file": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js",
-                            "column": 62,
-                            "line": 13
-                          },
-                          "message": "Error: expect: Property 'nth' not found.\n\n\u001b[0m \u001b[90m 11 |\u001b[39m         \u001b[90m// await page.goto('/')\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'span.card-title'\u001b[39m)\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'div.row span.card-title'\u001b[39m))\u001b[33m.\u001b[39mnth(\u001b[35m0\u001b[39m)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Виручка:'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     test\u001b[33m.\u001b[39mskip(\u001b[32m'usage POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at /Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js:13:62\u001b[22m"
+                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDEzNjY4MTUsImV4cCI6MTcwMTM3MDQxNX0.35VVizpVNGsN9GIaCpM118sWb9usmbCT9ymO5jCskos\n"
                         }
                       ],
-                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-27T21:50:27.358Z",
+                      "startTime": "2023-11-30T17:53:35.406Z",
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-check-the-state-after-open-page-login/trace.zip"
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-check-the-state-after-open-page-chromium/trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js",
-                        "column": 62,
-                        "line": 13
-                      }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "f48e2b1e9d9dac4d05f8-f812f21dde71135dade2",
+              "id": "f48e2b1e9d9dac4d05f8-f3265df056bc8c8ec095",
               "file": "newborn.spec.js",
-              "line": 10,
+              "line": 55,
               "column": 9
             },
             {
               "title": "usage POM",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4997,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-30T17:53:43.302Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-usage-POM-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f48e2b1e9d9dac4d05f8-b676f7abdab24c5c2831",
+              "file": "newborn.spec.js",
+              "line": 61,
+              "column": 9
+            },
+            {
+              "title": "without POM",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3910,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-11-30T17:53:48.304Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-without-POM-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f48e2b1e9d9dac4d05f8-baca45a3d1ce9536c05d",
+              "file": "newborn.spec.js",
+              "line": 66,
+              "column": 9
+            },
+            {
+              "title": "using the request API for category",
               "ok": true,
               "tags": [],
               "tests": [
@@ -217,90 +227,28 @@
                     }
                   ],
                   "expectedStatus": "skipped",
-                  "projectId": "login",
-                  "projectName": "login",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": -1,
+                      "workerIndex": 0,
                       "status": "skipped",
                       "duration": 0,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-27T21:50:30.293Z",
+                      "startTime": "2023-11-30T17:53:52.222Z",
                       "attachments": []
                     }
                   ],
                   "status": "skipped"
                 }
               ],
-              "id": "f48e2b1e9d9dac4d05f8-45a7d5f5a416328a4eab",
+              "id": "f48e2b1e9d9dac4d05f8-f26beaa6d218b8f00c1d",
               "file": "newborn.spec.js",
-              "line": 16,
+              "line": 70,
               "column": 10
-            },
-            {
-              "title": "without POM",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 15000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "login",
-                  "projectName": "login",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "failed",
-                      "duration": 6892,
-                      "error": {
-                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n\n    at /Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js:22:61",
-                        "location": {
-                          "file": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js",
-                          "column": 61,
-                          "line": 22
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     test(\u001b[32m'without POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'ul > li.bold.last > a'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Вийти'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m })\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js",
-                            "column": 61,
-                            "line": 22
-                          },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('ul > li.bold.last > a')\nExpected string: \u001b[32m\"Вийти\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul > li.bold.last > a')\u001b[22m\n\n\n\u001b[0m \u001b[90m 20 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     test(\u001b[32m'without POM'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'ul > li.bold.last > a'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Вийти'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at /Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js:22:61\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-11-27T21:50:30.672Z",
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-without-POM-login/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/tests/newborn.spec.js",
-                        "column": 61,
-                        "line": 22
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "f48e2b1e9d9dac4d05f8-106f6f53922cfbcdf838",
-              "file": "newborn.spec.js",
-              "line": 21,
-              "column": 9
             }
           ]
         }
@@ -309,7 +257,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-27T21:50:21.744Z",
-    "duration": 16124.808
+    "startTime": "2023-11-30T17:53:34.958Z",
+    "duration": 17613.599000000002
   }
 }
