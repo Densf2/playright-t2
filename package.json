@@ -10,7 +10,8 @@
   "devDependencies": {
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.9.0",
-    "mysql2": "^3.6.5"
+    "mysql2": "^3.6.5",
+    "newman": "^6.0.0"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
