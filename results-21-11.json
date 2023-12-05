@@ -111,16 +111,16 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6387,
+                      "duration": 6016,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDEzNjY4MTUsImV4cCI6MTcwMTM3MDQxNX0.35VVizpVNGsN9GIaCpM118sWb9usmbCT9ymO5jCskos\n"
+                          "text": "AUTH Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGRteXRyby5jb20iLCJ1c2VySWQiOiI2NTIyN2U1NzE0NmEyODE5OWI1MzA2MGYiLCJpYXQiOjE3MDE3OTY4MDAsImV4cCI6MTcwMTgwMDQwMH0.lQKm7S3VzrRKOLZribs3VGTQrvR6DT3anlERL4qD5TQ\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-30T17:53:35.406Z",
+                      "startTime": "2023-12-05T17:19:59.393Z",
                       "attachments": [
                         {
                           "name": "trace",
@@ -135,7 +135,7 @@
               ],
               "id": "f48e2b1e9d9dac4d05f8-f3265df056bc8c8ec095",
               "file": "newborn.spec.js",
-              "line": 55,
+              "line": 58,
               "column": 9
             },
             {
@@ -153,12 +153,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4997,
+                      "duration": 3761,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-30T17:53:43.302Z",
+                      "startTime": "2023-12-05T17:20:07.338Z",
                       "attachments": [
                         {
                           "name": "trace",
@@ -173,7 +173,7 @@
               ],
               "id": "f48e2b1e9d9dac4d05f8-b676f7abdab24c5c2831",
               "file": "newborn.spec.js",
-              "line": 61,
+              "line": 64,
               "column": 9
             },
             {
@@ -191,12 +191,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3910,
+                      "duration": 5589,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-30T17:53:48.304Z",
+                      "startTime": "2023-12-05T17:20:11.102Z",
                       "attachments": [
                         {
                           "name": "trace",
@@ -211,7 +211,7 @@
               ],
               "id": "f48e2b1e9d9dac4d05f8-baca45a3d1ce9536c05d",
               "file": "newborn.spec.js",
-              "line": 66,
+              "line": 69,
               "column": 9
             },
             {
@@ -238,7 +238,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-11-30T17:53:52.222Z",
+                      "startTime": "2023-12-05T17:20:16.693Z",
                       "attachments": []
                     }
                   ],
@@ -247,8 +247,171 @@
               ],
               "id": "f48e2b1e9d9dac4d05f8-f26beaa6d218b8f00c1d",
               "file": "newborn.spec.js",
-              "line": 70,
+              "line": 73,
               "column": 10
+            },
+            {
+              "title": "Create a category",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4706,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Response Status Code: \u001b[33m201\u001b[39m\n"
+                        },
+                        {
+                          "text": "Response Body: {\"imageSrc\":\"\",\"_id\":\"656f5bd5346c770e0dd310dd\",\"name\":\"NewCategory2\",\"user\":\"65227e57146a28199b53060f\",\"__v\":0}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-05T17:20:16.694Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-Create-a-category-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f48e2b1e9d9dac4d05f8-e3f3bd47b50627115fc7",
+              "file": "newborn.spec.js",
+              "line": 77,
+              "column": 9
+            },
+            {
+              "title": "GET a category",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8860,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-05T17:20:21.401Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-GET-a-category-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f48e2b1e9d9dac4d05f8-f4e6a17b253df78a883f",
+              "file": "newborn.spec.js",
+              "line": 94,
+              "column": 9
+            },
+            {
+              "title": "Create a position",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 7137,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "productId: 656f5be1346c770e0dd310ea\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-05T17:20:30.263Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-Create-a-position-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f48e2b1e9d9dac4d05f8-8c4451142bacee45683f",
+              "file": "newborn.spec.js",
+              "line": 111,
+              "column": 9
+            },
+            {
+              "title": "Remove Category",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3759,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-05T17:20:37.402Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/denys.pavliuk/Documents/projects/temp_dir_08_18/homework_playwright/test-results/newborn-Verification-steps-for-newborn-website-Remove-Category-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f48e2b1e9d9dac4d05f8-de541cd177eaaca3ee59",
+              "file": "newborn.spec.js",
+              "line": 130,
+              "column": 9
             }
           ]
         }
@@ -257,7 +420,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-11-30T17:53:34.958Z",
-    "duration": 17613.599000000002
+    "startTime": "2023-12-05T17:19:58.861Z",
+    "duration": 42546.959
   }
 }
