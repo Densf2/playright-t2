@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "api_tests": "npx mocha api_requests/login.js --timeout=30000 && npx mocha api_requests/usage_axios.js --timeout=30000"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,6 +14,7 @@
     "@types/node": "^20.9.0",
     "axios": "^1.6.2",
     "chai": "^4.3.10",
+    "fs-extra": "^11.2.0",
     "mocha": "^10.2.0",
     "mysql2": "^3.6.5",
     "newman": "^6.0.0"
