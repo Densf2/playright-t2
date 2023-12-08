@@ -1,6 +1,7 @@
 name: CI API Tests
 on:
   pull_request:
+    types: ['opened']
     branches: ['dpavliuk/rest']
 jobs:
   tests: 
