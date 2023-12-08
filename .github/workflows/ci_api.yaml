@@ -11,5 +11,5 @@ jobs:
     - uses: actions/setup-node@v3
     - name: Install dependecies
       run: npm ci
-    - name: Run playwright test
+    - name: Run API test
       run: npm run api_tests
