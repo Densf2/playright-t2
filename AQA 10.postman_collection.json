@@ -120,7 +120,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"kukuriku\"\n}",
+					"raw": "{\n    \"email\": \"no@mail.in\",\n    \"password\": \"kukuriku\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
