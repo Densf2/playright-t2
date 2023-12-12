@@ -9,7 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'node --version'
-                sh 'chown -R 113:117 "/.npm"'
+                sh 'sudo chown -R $(whoami) ~/.npm'
                 sh 'npm ci'
             }
         }
