@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:20.10.0-alpine3.19' args '-u root:root' } }
+    agent { docker { image 'node:20.10.0-alpine3.19' } }
     stages {
         stage('Clone source') {
             steps {
@@ -11,11 +11,15 @@ pipeline {
                 sh '''
                 node --version
                 #sudo chown -R 113:117 "/.npm"
-                apk add sudo
-                sudo apk add --update nodejs npm
-                npm ci
+                #apk add sudo
+                #sudo apk add --update nodejs npm
+                #npm ci
+                #npm run api_tests
                 '''
             }
+        }
+        stage('report') {
+            sh 'cd playwright-t2 && ls -la'
         }
     }
 }
