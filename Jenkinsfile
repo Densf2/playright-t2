@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:20.10.0-alpine3.19' } }
+    agent { docker { image 'node:20.10.0-alpine3.19' args '-u root:root' } }
     stages {
         stage('Clone source') {
             steps {
