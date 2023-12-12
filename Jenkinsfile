@@ -8,8 +8,11 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'node --version'
-                sh 'npm i'
+                sh '''
+                node --version
+                sudo chown -R 113:117 "/.npm"
+                npm ci
+                '''
             }
         }
     }
