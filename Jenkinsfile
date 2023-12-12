@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:20.10.0-alpine3.19' } }
+    agent { docker { image 'node:20.10.0-alpine3.19', args '-u root'  } }
     stages {
         stage('Clone source') {
             steps {
@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh '''
                 node --version
-                sudo chown -R 113:117 "/.npm"
+                #sudo chown -R 113:117 "/.npm"
                 npm ci
                 '''
             }
