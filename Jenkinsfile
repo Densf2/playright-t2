@@ -11,7 +11,7 @@ pipeline {
                 sh '''
                 node --version
                 #sudo chown -R 113:117 "/.npm"
-                apk add --update nodejs npm
+                sudo apk add --update nodejs npm
                 npm ci
                 '''
             }
