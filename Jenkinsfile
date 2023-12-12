@@ -18,9 +18,21 @@ pipeline {
                 '''
             }
         }
-        stage('report') {
+        stage('check the source structure') {
             steps {
-                sh 'cd playwright-t2 && ls -la'
+                sh 'ls -la'
+            }
+        }
+        stage('run parallel process') {
+            steps {
+                parallel(
+                    a: {
+                        echo 'process a'
+                    },
+                    b: {
+                        echo 'process b'
+                    }
+                )
             }
         }
     }
