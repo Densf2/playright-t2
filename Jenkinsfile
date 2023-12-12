@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone source') {
             steps {
-                git url: 'https://github.com/Densf2/playright-t2/tree/main/api_requests', branch: 'dpavliuk/jenkins'
+                git url: 'https://github.com/Densf2/playright-t2.git', branch: 'dpavliuk/jenkins'
             }
         }
         stage('build') {
