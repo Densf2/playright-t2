@@ -19,7 +19,9 @@ pipeline {
             }
         }
         stage('report') {
-            sh 'cd playwright-t2 && ls -la'
+            steps {
+                sh 'cd playwright-t2 && ls -la'
+            }
         }
     }
 }
